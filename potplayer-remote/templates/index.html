@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PotPlayer Remote - Summer Time Rendering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+     <!-- <link rel="stylesheet" href="/PotPlayer Remote/static/styles.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+     <!-- <link rel="manifest" href="/PotPlayer Remote/static/manifest.json"> -->
+     <link rel="icon" href="{{ url_for('static', filename='icons/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <!-- Connection Status -->
+    <div class="connection-status">Connected</div>
+
+    <!-- Title -->
+    <h1>PotPlayer Remote</h1>
+
+    <!-- Controls -->
+    <div class="controls">
+        <!-- Play/Pause -->
+        <button class="play-pause" onclick="control('playpause', event)">
+            <i class="fas fa-play" id="playIcon"></i>
+        </button>
+
+        <!-- Volume -->
+        <div class="row">
+            <button onclick="control('voldown', event)">
+                <i class="fas fa-volume-down"></i>
+            </button>
+            <button onclick="control('volup', event)">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+
+        <!-- Seek -->
+        <div class="row">
+            <button class="seek-btn" onclick="control('seekback', event)">
+                <i class="fas fa-backward-step"></i>
+            </button>
+            <button class="seek-btn" onclick="control('seekforward', event)">
+                <i class="fas fa-forward-step"></i>
+            </button>
+        </div>
+
+        <!-- Additional Controls -->
+        <div class="row">
+            <button onclick="control('fullscreen', event)">
+                <i class="fas fa-expand"></i>
+            </button>
+            <button onclick="control('mute', event)">
+                <i class="fas fa-volume-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Shutdown Controls -->
+        <button onclick="shutdownServer(event)" style="background: #ff2a2a;">
+           <i class="fas fa-power-off"></i> Shutdown Server
+        </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+     <!-- <script src="/PotPlayer Remote/static/js/script.js"></script> -->
+</body>
+</html>

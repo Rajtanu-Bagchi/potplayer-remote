@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: url('https://wallpapercave.com/wp/wp11257885.png') no-repeat center center fixed; /* Replace with a Summer Time Rendering background image */
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blurred Overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(4px); /* Adjust blur intensity */
+    z-index: -1;
+}
+
+h1 {
+    color: #0a2e46;
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(168, 216, 255, 0.7);
+    z-index: 1;
+}
+
+.controls {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(5px);
+    width: 100%;
+}
+
+button:active {
+    transform: scale(0.95);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    border-color: #a8d8ff;
+    box-shadow: 0 0 15px rgba(168, 216, 255, 0.5);
+}
+
+.play-pause {
+    background: #a8d8ff;
+    color: #0a2e46;
+    font-size: 2em;
+    padding: 30px;
+}
+
+.connection-status {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #a8d8ff;
+    color: #0a2e46;
+    font-weight: bold;
+    z-index: 1;
+}
+
+button i {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.play-pause i {
+    font-size: 1.5em;
+}
+
+.fa-play::before {
+    margin-left: 3px;
+}
+
+.fa-volume-up, .fa-volume-down {
+    font-size: 1.3em;
+}
+
+.fa-expand {
+    font-size: 1.1em;
+}
