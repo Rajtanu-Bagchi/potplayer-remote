@@ -30,7 +30,8 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
 - For macOS/Linux:
     1. Open terminal
     2. Run:
-        ***sudo apt install python3***
+        ```bash
+        sudo apt install python3
 
 ### 2️⃣ Install Dependencies
 
