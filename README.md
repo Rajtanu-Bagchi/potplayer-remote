@@ -23,12 +23,24 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
 
 ### 1️⃣ Install Python
 
-1. Download and install Python from [python.org](https://www.python.org/).
-2. Make sure to check "Add Python to PATH" during installation.
+- For Windows:
+    1. Download and install Python from [python.org](https://www.python.org/).
+    2. Make sure to check "Add Python to PATH" during installation.
+
+- For macOS/Linux:
+    1. Open terminal
+    2. Run:
+        ***sudo apt install python3***
 
 ### 2️⃣ Install Dependencies
 
-- Run ***install-requirements.bat*** to install the necessary Python modules.
+- For Windows:
+    - Run ***install-requirements.bat*** to install the necessary Python modules.
+
+- For macOS/Linux:
+    1. Open terminal.
+    2. Run:
+        ***./install-requirements.sh***
 
 ### 3️⃣ Install Certificate
 
@@ -37,13 +49,21 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
 
 ### 4️⃣ Start the Server
 
-1. Open PotPlayer and pause your video.
-2. Run ***start.bat*** to start the server.
-3. The server console will display a URL (e.g., *https://192.168.x.x:5000*).
+- For Windows:
+    1. Open PotPlayer and pause your video.
+    2. Run ***start.bat*** to start the server.
+    3. The server console will display a URL (e.g., *https://192.168.x.x:5000*).
+
+- For macOS/Linux:
+    1. Open PotPlayer and pause your video.
+    2. Open terminal.
+    3. Run:
+        ***./start.sh***
+    4. The server console will display a URL (e.g., *https://192.168.x.x:5000*).
 
 ### 5️⃣ Use the App
 
-1. Open the URL on your Android device.
+1. Open the URL on your Android/iOS device.
 2. Add the app to your home screen for quick access. *(Optional but Recommended)*
     - Adding the app to your home screen saves you from typing the URL every time.
 3. Switch back to PotPlayer, ensuring it is the **active window**.
