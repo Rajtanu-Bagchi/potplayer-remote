@@ -1,4 +1,4 @@
-# PotPlayer Remote 🎮📺
+# PotPlayer Remote 📱🖥️
 
 Control your PotPlayer from your phone! No more interruptions while watching anime, movies, or web series — stay relaxed and in control! 🛋️
 
