@@ -5,11 +5,11 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
 
 ## 🎯 Features
 
-✅ Play/Pause
-✅ Seek Forward / Backward
-✅ Volume Up / Down
-✅ Mute/Unmute
-✅ Toggle Fullscreen
+- ✅ Play/Pause
+- ✅ Seek Forward / Backward
+- ✅ Volume Up / Down
+- ✅ Mute/Unmute
+- ✅ Toggle Fullscreen
 
 
 ## How It Works
