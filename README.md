@@ -40,7 +40,8 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
 - For macOS/Linux:
     1. Open terminal.
     2. Run:
-        ***./install-requirements.sh***
+    ```bash
+    ./install-requirements.sh
 
 ### 3️⃣ Install Certificate
 
@@ -58,7 +59,8 @@ Control your PotPlayer from your phone! No more interruptions while watching ani
     1. Open PotPlayer and pause your video.
     2. Open terminal.
     3. Run:
-        ***./start.sh***
+    ```bash
+    ./start.sh
     4. The server console will display a URL (e.g., *https://192.168.x.x:5000*).
 
 ### 5️⃣ Use the App
